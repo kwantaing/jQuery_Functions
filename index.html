@@ -78,10 +78,6 @@
     </div>
 </body>
 <script>
-$(".attr").click(function(){
-    $("#sizing").attr('src', '/images/RUBY.png');
-});
-
 $('.hide').click(function(){
     $('#image0').hide();
 });
@@ -122,8 +118,9 @@ $('#html').click(function(){
     $('#html').html("<h4>This is a new h4</h4>");
 })
 $(".attr").click(function(){
-    $('#sizing').attr("width",213+'px');
-})
+    $("#sizing").attr('src', '/images/RUBY.png');
+});
+
 $(".val").click(function(){
     $(".value").val("Value is now changed");
 })
