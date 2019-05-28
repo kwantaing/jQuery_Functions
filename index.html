@@ -5,72 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>My jQuery basic assignment</title>
 </head>
 <body>
-    <div class="examples" id="hide_show">
-        Hide & Show
-        <button class="hide">Hide</button>
-        <button class="show">Show</button>
-        <img id="image0"src="/images/jQuery.png" alt="Image">
-    </div>
-    <div class="examples" id="toggle">
-        Toggle
-        <button class="toggle">Toggle</button>
-        <img src="/images/LAMP.png" alt="Image" id="image1">
-    </div>
-    <div class="examples" id="slide_down">
-        Slide Up/Down
-        <button class="slidedown">Slide Down</button>
-        <button class="slideup">Slide Up</button>
-        <button class="slidetoggle">Slide Toggle</button>
-        <img src="/images/JavaScript.png" alt="Image" id="image2">
-        
-    </div>
-    <div class="examples" id="fadeIn">
-        Fade In and Out
-        <button class="fadein">Fade In</button>
-        <button class="fadeout">Fade Out</button>
-        <img src="/images/python.png" alt="Image" id="image3">
-    </div>
-    <div class="examples" id="addClass">
-        AddClass
-        <p id="colorchange">This text should change red upon click<p>
-        <button class="addClass">Add Class</button>
-    </div>
-    <div class="examples" id="before">
-        <img src="/images/RUBY.png" alt="Image" id="image4">
-        Text should appear before picture upon click
-        <button class="before">Before</button>
-    </div>
-    <div class="examples" id="after">
-        Text should appear after picture upon click
-        <img src="/images/iOS-Swift.png" alt="Image" id="image5">
-        <button class="after">After</button>
-    </div>
-    <div class="examples" id="append">
-        <img src="/images/MEAN.png" alt="">
-        another picture will appear in this div upon click
-        <button class="append">Append</button>
-    </div>
-    <div class="examples" id="html">
-        Replaces html content in this div
-        <button class="html">Add a div</button>
-    </div>
-    <div class="examples" id="attr">
-        Alters image size and attributes upon click
-        <button class="attr">Attribute</button>
-        <img src="/images/materialize.png" alt="Image" id="sizing">
-    </div>
-    <div class="examples" id="val">
-        <input type="text" class="value">
-        <button class="val">Change Value in field</button>
-    </div>
-    <div class="examples" id="text">
-        <strong>Text</strong>
-        <p>Change text in here after click</p>
-        <button class="text">Text Change</button>
+    <div class="container">
+        <div class="jumbotron">
+            <h4>Hide & Show</h4>
+            <button class="hide">Hide</button>
+            <button class="show">Show</button>
+            <img id="image0"src="/images/jQuery.png" alt="Image">
+            <hr class="my-4">
+            <h4>Toggle</h4>
+            <button class="toggle">Toggle</button>
+            <img src="/images/LAMP.png" alt="Image" id="image1">
+            <hr class="my-4">
+            <h4>Slide Up/ Down</h4>
+            <button class="slidedown">Slide Down</button>
+            <button class="slideup">Slide Up</button>
+            <button class="slidetoggle">Slide Toggle</button>
+            <img src="/images/JavaScript.png" alt="Image" id="image2">
+            <hr class="my-4">
+            <h4>Fade In and Out</h4>
+            <button class="fadein">Fade In</button>
+            <button class="fadeout">Fade Out</button>
+            <img src="/images/python.png" alt="Image" id="image3">
+            <hr class="my-4">
+            <h4>Add Class</h4>
+            <p id="colorchange">This text should change red upon click<p>
+            <button class="addClass">Add Class</button>
+            <hr class="my-4">
+            <img src="/images/RUBY.png" alt="Image" id="image4">
+            <h4>Text should appear before picture upon click</h4>
+            <button class="before">Before</button>
+            <hr class="my-4">
+            <h4>Text should appear after picture upon click</h4>
+            <button class="after">After</button>
+            <img src="/images/iOS-Swift.png" alt="Image" id="image5">
+            <hr class="my-4">
+            <div id="append">
+                <img src="/images/MEAN.png" alt="">
+                <h4>another picture will appear in this div upon click</h4>
+                <button class="append">Append</button>
+            </div>
+            <hr class="my-4">
+            <div id="html">
+                <h4>Replaces html content in this div</h4>
+                <button class="html">Add a div</button>
+            </div>
+            <hr class="my-4">
+            <h4>Alters image size and attributes upon click</h4>
+            <button class="attr">Attribute</button>
+            <img src="/images/materialize.png" alt="Image" id="sizing">
+            <hr class="my-4">
+            <h4>Change Value</h4>
+            <input type="text" class="value">
+            <button class="val">Change Value in field</button>
+            <hr class="my-4">
+            <h4><strong>Text</strong></h4>
+            <p>Change text in here after click</p>
+            <button class="text">Text Change</button>
+
+        </div>
     </div>
 </body>
 <script>
@@ -111,7 +114,7 @@ $('.append').click(function(){
     $('#append').append("<img src='/images/iOS-Swift.png' alt='Image'>");
 })
 $('#html').click(function(){
-    $('#html').html("<div>This is a new div</div>");
+    $('#html').html("<h4>This is a new h4</h4>");
 })
 $(".attr").click(function(){
     $('#sizing').attr("width",213+'px');
