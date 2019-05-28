@@ -17,11 +17,13 @@
 </head>
 <body>
     <div class="container">
+        <h1>jQuery Basic Functions</h1>
         <div class="jumbotron">
             <h4>Hide & Show</h4>
             <button class="hide">Hide</button>
             <button class="show">Show</button>
             <img id="image0"src="/images/jQuery.png" alt="Image">
+            <hr class="my-4">
             <hr class="my-4">
             <h4>Toggle</h4>
             <button class="toggle">Toggle</button>
@@ -70,7 +72,7 @@
             <button class="val">Change Value in field</button>
             <hr class="my-4">
             <h4><strong>Text</strong></h4>
-            <p>Change text in here after click</p>
+            <p id="text">Change text in here after click</p>
             <button class="text">Text Change</button>
 
         </div>
@@ -123,7 +125,7 @@ $(".val").click(function(){
     $(".value").val("Value is now changed");
 })
 $(".text").click(function(){
-    $("#text p").text("I changed the text here.");
+    $("#text").text("I changed the text here.");
 })
 </script>
 </html>
