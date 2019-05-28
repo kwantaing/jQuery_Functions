@@ -63,9 +63,9 @@
                 <button class="html">Add a div</button>
             </div>
             <hr class="my-4">
-            <h4>Alters image size and attributes upon click</h4>
+            <h4>Alters image source upon click</h4>
             <button class="attr">Attribute</button>
-            <img src="/images/materialize.png" alt="Image" id="sizing">
+            <img id="sizing" src="/images/materialize.png" alt="Image">
             <hr class="my-4">
             <h4>Change Value</h4>
             <input type="text" class="value">
@@ -74,11 +74,14 @@
             <h4><strong>Text</strong></h4>
             <p id="text">Change text in here after click</p>
             <button class="text">Text Change</button>
-
         </div>
     </div>
 </body>
 <script>
+$(".attr").click(function(){
+    $("#sizing").attr('src', '/images/RUBY.png');
+});
+
 $('.hide').click(function(){
     $('#image0').hide();
 });
@@ -127,5 +130,6 @@ $(".val").click(function(){
 $(".text").click(function(){
     $("#text").text("I changed the text here.");
 })
+
 </script>
 </html>
