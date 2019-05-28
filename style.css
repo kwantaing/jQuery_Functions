@@ -1,0 +1,15 @@
+.examples{
+    width:500px;
+    border:2px solid black;
+    height:60px;
+}
+img{
+    height:50px;
+    width:50px;
+}
+.red{
+    color:red;
+}
+p{
+    display:inline-block;
+}

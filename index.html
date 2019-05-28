@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>My jQuery basic assignment</title>
+</head>
+<body>
+    <div class="examples" id="hide_show">
+        Hide & Show
+        <button class="hide">Hide</button>
+        <button class="show">Show</button>
+        <img id="image0"src="/images/jQuery.png" alt="Image">
+    </div>
+    <div class="examples" id="toggle">
+        Toggle
+        <button class="toggle">Toggle</button>
+        <img src="/images/LAMP.png" alt="Image" id="image1">
+    </div>
+    <div class="examples" id="slide_down">
+        Slide Up/Down
+        <button class="slidedown">Slide Down</button>
+        <button class="slideup">Slide Up</button>
+        <button class="slidetoggle">Slide Toggle</button>
+        <img src="/images/JavaScript.png" alt="Image" id="image2">
+        
+    </div>
+    <div class="examples" id="fadeIn">
+        Fade In and Out
+        <button class="fadein">Fade In</button>
+        <button class="fadeout">Fade Out</button>
+        <img src="/images/python.png" alt="Image" id="image3">
+    </div>
+    <div class="examples" id="addClass">
+        AddClass
+        <p id="colorchange">This text should change red upon click<p>
+        <button class="addClass">Add Class</button>
+    </div>
+    <div class="examples" id="before">
+        <img src="/images/RUBY.png" alt="Image" id="image4">
+        Text should appear before picture upon click
+        <button class="before">Before</button>
+    </div>
+    <div class="examples" id="after">
+        Text should appear after picture upon click
+        <img src="/images/iOS-Swift.png" alt="Image" id="image5">
+        <button class="after">After</button>
+    </div>
+    <div class="examples" id="append">
+        <img src="/images/MEAN.png" alt="">
+        another picture will appear in this div upon click
+        <button class="append">Append</button>
+    </div>
+    <div class="examples" id="html">
+        Replaces html content in this div
+        <button class="html">Add a div</button>
+    </div>
+    <div class="examples" id="attr">
+        Alters image size and attributes upon click
+        <button class="attr">Attribute</button>
+        <img src="/images/materialize.png" alt="Image" id="sizing">
+    </div>
+    <div class="examples" id="val">
+        <input type="text" class="value">
+        <button class="val">Change Value in field</button>
+    </div>
+    <div class="examples" id="text">
+        <strong>Text</strong>
+        <p>Change text in here after click</p>
+        <button class="text">Text Change</button>
+    </div>
+</body>
+<script>
+$('.hide').click(function(){
+    $('#image0').hide();
+});
+$('.show').click(function(){
+    $('#image0').show();
+});
+$('.toggle').click(function(){
+    $('#image1').toggle();
+});
+$('.slidedown').click(function(){
+    $('#image2').slideDown();
+});
+$('.slideup').click(function(){
+    $("#image2").slideUp();
+});
+$('.slidetoggle').click(function(){
+    $("#image2").slideToggle();
+});
+$('.fadein').click(function(){
+    $("#image3").fadeIn();
+});
+$('.fadeout').click(function(){
+    $("#image3").fadeOut();
+})
+$('.addClass').click(function(){
+    $("#colorchange").addClass("red");
+});
+$('.before').click(function(){
+    $("#image4").before("New text here");
+});
+$('.after').click(function(){
+    $("#image5").after("New text here");
+});
+$('.append').click(function(){
+    $('#append').append("<img src='/images/iOS-Swift.png' alt='Image'>");
+})
+$('#html').click(function(){
+    $('#html').html("<div>This is a new div</div>");
+})
+$(".attr").click(function(){
+    $('#sizing').attr("width",213+'px');
+})
+$(".val").click(function(){
+    $(".value").val("Value is now changed");
+})
+$(".text").click(function(){
+    $("#text p").text("I changed the text here.");
+})
+</script>
+</html>
