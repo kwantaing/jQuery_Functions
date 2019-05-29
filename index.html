@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -22,29 +19,29 @@
             <h4>Hide & Show</h4>
             <button class="hide">Hide</button>
             <button class="show">Show</button>
-            <img id="image0"src="/images/jQuery.png" alt="Image">
+            <img id="image0"src="jQuery.png" alt="Image">
 
             <hr class="my-4">
             <hr class="my-4">
 
             <h4>Toggle</h4>
             <button class="toggle">Toggle</button>
-            <img src="/images/LAMP.png" alt="Image" id="image1">
+            <img src="LAMP.png" alt="Image" id="image1">
 
             <hr class="my-4">
 
-            <h4>Slide Up/ Down</h4>
+            <h4>Slide Up / Down</h4>
             <button class="slidedown">Slide Down</button>
             <button class="slideup">Slide Up</button>
             <button class="slidetoggle">Slide Toggle</button>
-            <img src="/images/JavaScript.png" alt="Image" id="image2">
+            <img src="JavaScript.png" alt="Image" id="image2">
 
             <hr class="my-4">
 
             <h4>Fade In and Out</h4>
             <button class="fadein">Fade In</button>
             <button class="fadeout">Fade Out</button>
-            <img src="/images/python.png" alt="Image" id="image3">
+            <img src="python.png" alt="Image" id="image3">
 
             <hr class="my-4">
 
@@ -54,7 +51,7 @@
 
             <hr class="my-4">
 
-            <img src="/images/RUBY.png" alt="Image" id="image4">
+            <img src="RUBY.png" alt="Image" id="image4">
             <h4>Text should appear before picture upon click</h4>
             <button class="before">Before</button>
 
@@ -62,12 +59,12 @@
 
             <h4>Text should appear after picture upon click</h4>
             <button class="after">After</button>
-            <img src="/images/iOS-Swift.png" alt="Image" id="image5">
+            <img src="iOS-Swift.png" alt="Image" id="image5">
 
             <hr class="my-4">
 
             <div id="append">
-                <img src="/images/MEAN.png" alt="">
+                <img src="MEAN.png" alt="">
                 <h4>another picture will appear in this div upon click</h4>
                 <button class="append">Append</button>
             </div>
@@ -83,7 +80,7 @@
 
             <h4>Alters image source upon click</h4>
             <button class="attr">Attribute</button>
-            <img id="sizing" src="/images/materialize.png" alt="Image">
+            <img id="sizing" src="materialize.png" alt="Image">
 
             <hr class="my-4">
 
@@ -134,13 +131,13 @@
         $("#image5").after("New text here");
     });
     $('.append').click(function(){
-        $('#append').append("<img src='/images/iOS-Swift.png' alt='Image'>");
+        $('#append').append("<img src='iOS-Swift.png' alt='Image'>");
     })
     $('#html').click(function(){
         $('#html').html("<h4>This is a new h4</h4>");
     })
     $(".attr").click(function(){
-        $("#sizing").attr('src', '/images/RUBY.png');
+        $("#sizing").attr('src', 'RUBY.png');
     });
 
     $(".val").click(function(){
